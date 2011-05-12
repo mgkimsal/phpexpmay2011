@@ -1,13 +1,14 @@
 <?php 
 $f = fopen("http://yahoo.com/","r");
 // filters before
-print_r(stream_get_filters());
+//print_r(stream_get_filters());
+//die();
 
 // add a built-in filter from that list
 stream_filter_append($f, "string.toupper");
 
 // uncomment for more filter fun
-//stream_filter_append($f, "string.strip_tags");
+stream_filter_append($f, "string.strip_tags");
 
 // watch how the filter affects the behaviour
 while(!feof($f)) {

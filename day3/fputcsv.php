@@ -1,5 +1,5 @@
 <?php
-$people = array("michael","dave","joe","lesley");
+$people = array("michael","Daniel","James","Jeff");
 
 $file = fopen("newcsv.txt","w");
 // comma

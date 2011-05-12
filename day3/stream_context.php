@@ -6,7 +6,7 @@ $options = array(
 	)
 );
 // make the context 
-$context = stream_context_create($opts);
+$context = stream_context_create($options);
 
 $fp = fopen('http://kimsal.com/', 'r', false, $context);
 fpassthru($fp);

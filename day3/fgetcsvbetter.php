@@ -5,9 +5,11 @@ $f = fopen("csvfile.txt","r");
 $top = fgetcsv($f);
 // loop
 while($line = fgetcsv($f)) {
+	$newline = array();
 	foreach($top as $k=>$v)
 	{
 		$newline[strtolower($v)] = $line[$k];
 	}
-	print_r($newline);
+	echo $newline['name']."\n";
+//	print_r($newline);
 }
