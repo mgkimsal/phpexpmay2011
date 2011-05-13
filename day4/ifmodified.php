@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set("America/New_York");
+
 if(@$_SERVER['HTTP_IF_MODIFIED_SINCE']!='')
 {
 	$h = strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']);
