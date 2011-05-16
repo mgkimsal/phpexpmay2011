@@ -1,8 +1,8 @@
 <pre>
 <?php
-echo "POST=".print_r($_POST)."\n";
-echo "GET=".print_r($_GET)."\n";
-echo "REQUEST=".print_r($_REQUEST)."\n";
+echo "POST="; print_r($_POST); echo "\n";
+echo "GET="; print_r($_GET); echo "\n";
+echo "REQUEST="; print_r($_REQUEST); echo "\n";
 ?>
 </pre>
 <form method="post">
