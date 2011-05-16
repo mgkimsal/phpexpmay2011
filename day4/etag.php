@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("America/New_York");
 //$time = 1195248471; 
-$eTag = md5("test2"); 
+$eTag = md5("test3"); 
 $noneMatch = isset($_SERVER['HTTP_IF_NONE_MATCH'])? $_SERVER['HTTP_IF_NONE_MATCH']:''; 
 if ($noneMatch == $eTag) { 
  header('304 Not Modified', true, 304); 
