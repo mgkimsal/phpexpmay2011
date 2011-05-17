@@ -6,10 +6,10 @@ class User {
 	}
 }
 class Student extends User {
-	public $type = "student";
 	public $grade = 0;
 	public function __construct($grade=null)
 	{
+		$this->type = "student";
 		if($grade!=null){
 			$this->grade = $grade;
 		}

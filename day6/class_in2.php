@@ -2,7 +2,8 @@
 class User {
 	static $datapath = "/tmp/users/";
 	public function getPath() {
-		echo self::$datapath;
+		echo static::$datapath; // /tmp/teachers
+		echo self::$datapath; // /tmp/users
 	}
 }
 class Student extends User {
