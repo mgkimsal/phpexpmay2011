@@ -4,10 +4,10 @@ class refclass {
 }
 function myfunction(refclass $r)
 {
-	$r->id = 5;
+	$r->id = 7;
 }
 $t = new refclass();
 $t->id = 2;
 assert($t->id==2);
 myfunction($t);
-assert($t->id==5);
+assert($t->id==7);

@@ -4,6 +4,7 @@ function __autoload($f) {
 //	die("trying to load class $f");
 	$t = str_replace("\\","/",$f);
 	echo "going to include $t.php\n";
+	die();
 	include("$t.php");
 //	die();
 }

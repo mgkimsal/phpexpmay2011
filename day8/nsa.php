@@ -10,6 +10,7 @@ class foo {
 	}
 	
 }
-
+/*
 foo::showFoo();
 \com\kimsal\foo::showBar('hey');
+*/
