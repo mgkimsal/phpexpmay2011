@@ -28,4 +28,4 @@ class dbo {
 }
 class person extends dbo {}
 $p = new person();
-$p->findAllByName("mike");
+$p->findAllByNameAndAgeLessThan("mike",28);

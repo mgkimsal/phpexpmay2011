@@ -6,7 +6,7 @@ class user {
 	public function showLevel() { 
 		echo "You are level ".$this->level."\n";
 	}
-	public function showPass() { 
+	protected function showPass() { 
 		echo "your level is ".$this->level."\n";
 		echo "Password is ".$this->password."\n";
 	}

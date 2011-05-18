@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 class user {
 
 	public $name = "mike";
@@ -21,5 +22,7 @@ class adminUser extends user {
 //$u = new user();
 //echo $u->password."\n";  // generates a fatal error
 //$u->showPass();
+//die();
 $admin = new adminUser();
+//echo $admin->password."\n";
 $admin->showPass();

@@ -1,18 +1,22 @@
 <?php
+interface phone {
+	  function makeCall();
+	  function receiveCall();
 
-abstract class phone {
+}
+abstract class genericphone {
 	public $id = "generic";
-	function showManufacturerId() { 
+	public function showManufacturerId() { 
 		echo $this->id;
 	}
-	protected abstract function makeCall();
-	protected abstract function receiveCall();
+	abstract function setMfgId($id);
 }
 
-class mobilePhone extends phone {
+class mobilePhone extends genericphone implements phone {
 	public $id ="kimsalco";
 	function makeCall() { }
-	function receiveCall() { }	
+	function receiveCall() { }
+	function setMfgId($id) { }	
 }
 $d = new mobilePhone();
 $d->showManufacturerId();
