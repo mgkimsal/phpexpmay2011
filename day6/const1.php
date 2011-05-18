@@ -1,5 +1,5 @@
 <?php
-	const TYPE_GENERIC = 5;
+const TYPE_GENERIC = 5;
 
 class User {
 	const TYPE_GUEST = 1;
@@ -11,7 +11,11 @@ class User {
 	}
 }
 $user = new User(User::TYPE_GUEST);
-echo "generic value is ". TYPE_GENERIC."\n";
+//echo "generic value is ". TYPE_GENERIC."\n";
 if ($user->type === User::TYPE_GUEST) {
 	echo 'User is a guest';
+}
+
+if(defined('TYPE_GENERIC')){
+	echo "\ngeneric is defined";
 }

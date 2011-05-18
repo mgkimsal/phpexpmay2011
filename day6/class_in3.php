@@ -11,7 +11,6 @@ class Student extends User {
 }
 class Teacher extends User {
 	static $datapath = "/tmp/teachers/";
-	public $type = "teacher";
 }
 
 $s = new Teacher();
